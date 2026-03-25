@@ -22,16 +22,19 @@
         }
 
         :root {
-            --black:      #0B0B0B;
-            --dark:       #141414;
-            --dark-2:     #1A1A1A;
-            --dark-3:     #222222;
+            --black:      #0D0D0D;
+            --dark:       #161616;
+            --dark-2:     #1C1C1C;
+            --dark-3:     #252525;
             --grey:       #555555;
             --grey-light: #888888;
             --white:      #FFFFFF;
+            --cream:      #F2EDE5;
+            --cream-2:    #F7F3EE;
+            --ink:        #111111;
             --gold:       #C8A96A;
-            --gold-dim:   rgba(200, 169, 106, 0.12);
-            --gold-glow:  rgba(200, 169, 106, 0.25);
+            --gold-dim:   rgba(200, 169, 106, 0.14);
+            --gold-glow:  rgba(200, 169, 106, 0.28);
 
             --font-display: 'Bebas Neue', sans-serif;
             --font-heading: 'Oswald', sans-serif;
@@ -209,7 +212,7 @@
         .section-lead {
             font-size: clamp(1rem, 1.4vw, 1.1rem);
             font-weight: 300;
-            color: rgba(255,255,255,.55);
+            color: rgba(255,255,255,.72);
             line-height: 1.75;
             max-width: 560px;
         }
@@ -334,7 +337,7 @@
         .hero-sub {
             font-size: clamp(.95rem, 1.4vw, 1.15rem);
             font-weight: 300;
-            color: rgba(255,255,255,.6);
+            color: rgba(255,255,255,.8);
             line-height: 1.75;
             max-width: 460px;
             padding-left: 1.25rem;
@@ -369,7 +372,7 @@
             font-weight: 400;
             letter-spacing: .14em;
             text-transform: uppercase;
-            color: rgba(255,255,255,.3);
+            color: rgba(255,255,255,.48);
             margin-top: .25rem;
             display: block;
         }
@@ -473,7 +476,7 @@
             gap: 1rem;
             font-size: 1.05rem;
             font-weight: 300;
-            color: rgba(255,255,255,.7);
+            color: rgba(255,255,255,.82);
             line-height: 1.55;
             padding-bottom: 1.1rem;
             border-bottom: 1px solid rgba(255,255,255,.05);
@@ -507,7 +510,7 @@
         =============================================== */
         #cambio {
             padding: clamp(7rem, 14vw, 14rem) 0;
-            background: var(--black);
+            background: var(--cream);
             text-align: center;
             position: relative; overflow: hidden;
         }
@@ -519,7 +522,7 @@
             font-family: var(--font-display);
             font-size: clamp(8rem, 20vw, 22rem);
             line-height: 1;
-            color: rgba(255,255,255,.02);
+            color: rgba(0,0,0,.04);
             white-space: nowrap;
             pointer-events: none;
             user-select: none;
@@ -531,7 +534,7 @@
             font-family: var(--font-display);
             font-size: clamp(3.5rem, 8vw, 9rem);
             line-height: .9;
-            color: rgba(255,255,255,.15);
+            color: rgba(15,15,15,.14);
             text-transform: uppercase;
             letter-spacing: .02em;
         }
@@ -539,7 +542,7 @@
             font-family: var(--font-display);
             font-size: clamp(3.5rem, 8vw, 9rem);
             line-height: .9;
-            color: var(--white);
+            color: var(--ink);
             text-transform: uppercase;
             letter-spacing: .02em;
             margin-bottom: 3rem;
@@ -547,13 +550,13 @@
         .cambio-l2 em { color: var(--gold); font-style: normal; }
         .cambio-vert {
             width: 1px; height: 60px;
-            background: linear-gradient(to bottom, var(--gold), transparent);
+            background: linear-gradient(to bottom, var(--gold), rgba(200,169,106,0));
             margin: 0 auto 3rem;
         }
         .cambio-body {
             font-size: clamp(.95rem, 1.5vw, 1.2rem);
             font-weight: 300;
-            color: rgba(255,255,255,.5);
+            color: rgba(15,15,15,.62);
             line-height: 1.85;
             max-width: 620px;
             margin: 0 auto;
@@ -577,7 +580,7 @@
         .servicio-intro {
             font-size: 1.05rem;
             font-weight: 300;
-            color: rgba(255,255,255,.55);
+            color: rgba(255,255,255,.72);
             line-height: 1.75;
         }
 
@@ -612,7 +615,7 @@
         .servicio-desc {
             font-size: .875rem;
             font-weight: 300;
-            color: rgba(255,255,255,.45);
+            color: rgba(255,255,255,.65);
             line-height: 1.65;
         }
 
@@ -668,7 +671,7 @@
         .benef-desc {
             font-size: .85rem;
             font-weight: 300;
-            color: rgba(255,255,255,.4);
+            color: rgba(255,255,255,.6);
             line-height: 1.65;
         }
 
@@ -708,7 +711,7 @@
             align-items: center;
             gap: .85rem;
             font-size: .9rem;
-            color: rgba(255,255,255,.65);
+            color: rgba(255,255,255,.82);
         }
         .cred-dot {
             width: 5px; height: 5px;
@@ -720,7 +723,7 @@
         .sete-bio {
             font-size: 1rem;
             font-weight: 300;
-            color: rgba(255,255,255,.55);
+            color: rgba(255,255,255,.72);
             line-height: 1.8;
         }
         .sete-bio p + p { margin-top: 1rem; }
@@ -861,8 +864,11 @@
         =============================================== */
         #prueba {
             padding: var(--section-pad) 0;
-            background: var(--dark-2);
+            background: var(--cream-2);
         }
+
+        #prueba .eyebrow { color: var(--gold); }
+        #prueba .section-h2-md { color: var(--ink); }
 
         .prueba-grid {
             display: grid;
@@ -872,8 +878,8 @@
         }
         .test-card {
             padding: 2.25rem;
-            background: var(--black);
-            border: 1px solid rgba(255,255,255,.06);
+            background: var(--white);
+            border: 1px solid rgba(0,0,0,.07);
             position: relative;
         }
         .test-card::before {
@@ -884,12 +890,12 @@
             font-size: 4.5rem;
             line-height: 1;
             color: var(--gold);
-            opacity: .15;
+            opacity: .25;
         }
         .test-text {
             font-size: .95rem;
             font-weight: 300;
-            color: rgba(255,255,255,.6);
+            color: rgba(15,15,15,.65);
             line-height: 1.7;
             font-style: italic;
             margin-bottom: 1.5rem;
@@ -902,7 +908,7 @@
         .test-avatar {
             width: 36px; height: 36px;
             border-radius: 50%;
-            background: var(--dark-3);
+            background: #e6e0d8;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -916,11 +922,11 @@
             font-family: var(--font-heading);
             font-size: .85rem;
             font-weight: 600;
-            color: var(--white);
+            color: var(--ink);
         }
         .test-detail {
             font-size: .72rem;
-            color: rgba(255,255,255,.3);
+            color: rgba(15,15,15,.42);
             margin-top: .1rem;
         }
 
@@ -958,7 +964,7 @@
         .cta-sub {
             font-size: clamp(.95rem, 1.4vw, 1.1rem);
             font-weight: 300;
-            color: rgba(255,255,255,.5);
+            color: rgba(255,255,255,.7);
             line-height: 1.75;
             max-width: 580px;
             margin: 0 auto 3.5rem;
@@ -978,14 +984,14 @@
             font-weight: 500;
             letter-spacing: .22em;
             text-transform: uppercase;
-            color: rgba(255,255,255,.35);
+            color: rgba(255,255,255,.52);
             display: block;
             margin-bottom: .35rem;
         }
         .form-input {
             width: 100%;
             background: var(--dark-2);
-            border: 1px solid rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.14);
             color: var(--white);
             font-family: var(--font-body);
             font-size: 1rem;
@@ -1140,6 +1146,36 @@
             .hero-ctas      { flex-direction: column; align-items: flex-start; }
             .cta-alt        { flex-direction: column; }
         }
+
+        /* ==============================================
+           LIGHT SECTION OVERRIDES
+           Sections with cream background need dark text
+        =============================================== */
+
+        /* #cambio — full cream flip */
+        #cambio .eyebrow { color: var(--gold); }
+        #cambio .eyebrow::before { background: var(--gold); }
+
+        /* #prueba — cream with white cards */
+        #prueba .divider { background: var(--gold); }
+
+        /* Diferencial: lighten the "good" column slightly */
+        .vs-col.vs-good { background: rgba(200,169,106,.08); }
+        .vs-col.vs-bad  { background: #101010; }
+
+        /* Servicio numbers: a touch brighter */
+        .servicio-num { color: rgba(200,169,106,.3); }
+
+        /* Benef number gold: a touch brighter */
+        .benef-num { color: rgba(200,169,106,.65); }
+
+        /* Borders on servicio/benef grids: slightly visible */
+        .servicio-grid { background: rgba(255,255,255,.09); }
+        .beneficios-grid { background: rgba(255,255,255,.09); }
+
+        /* Footer text slightly brighter */
+        .footer-copy { color: rgba(255,255,255,.3); }
+        .cta-note { color: rgba(255,255,255,.3); }
     </style>
 </head>
 
